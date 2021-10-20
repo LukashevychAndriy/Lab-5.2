@@ -5,7 +5,7 @@ const eps = +prompt('Введіть значення параметру eps'); /
 
 console.log('|\tx\t\t|\tarctg(x)\t\t|\tS\t\t\t\t|\tn\t|');
 
-for (let x = xp; x <= xk && x < -1; x += dx) {
+for (let x = xp; x <= xk; x += dx) {
   let result = -Math.PI / 2 + sum(x, eps);
 
   console.log(`|\t${x.toFixed(2)}\t|\t${Math.atan(x).toFixed(10)}\t|\t${result.toFixed(10)}\t|\t${getAdditionsAmount(x, eps)}\t|`);
